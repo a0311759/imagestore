@@ -96,7 +96,7 @@ function searchImages() {
   container.innerHTML = ''; // Clear existing images
   
   // Fetch images based on search term
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 25; i++) {
     fetch(`https://source.unsplash.com/featured/?${searchTerm}&${i}`)
       .then(response => {
         if (!response.ok) {
